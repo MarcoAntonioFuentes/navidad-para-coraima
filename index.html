@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#171714">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Una Navidad para Coraima, de parte de Marco.">
+<link rel="canonical" href="https://marcoantoniofuentes.github.io/navidad-para-coraima/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marcoantoniofuentes.github.io/navidad-para-coraima/">
+<meta property="og:title" content="Una Navidad para Coraima">
+<meta property="og:description" content="Un saludo navideño de Marco con recuerdos, una carta y buenos deseos.">
+<meta property="og:image" content="https://marcoantoniofuentes.github.io/navidad-para-coraima/vista-navidad.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Una Navidad para Coraima con el monograma dorado C">
+<meta name="twitter:card" content="summary_large_image">
+<title>Una Navidad para Coraima</title>
+<link rel="icon" type="image/png" href="logo-c.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="navidad.css">
+<script defer src="navidad.js"></script>
+</head>
+<body>
+<audio id="christmas-song" src="en-lo-alto-gloria.mp3" preload="auto" loop></audio>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div class="progress" aria-hidden="true"></div>
+<header class="hero" id="inicio">
+  <div class="scene" aria-hidden="true"><div class="library"></div></div>
+  <div class="shimmer" aria-hidden="true"></div>
+  <div class="library-glow" aria-hidden="true"></div>
+  <div class="snow" aria-hidden="true"></div>
+  <div class="hero-frame" aria-hidden="true"></div>
+  <nav class="wrap nav" aria-label="Navegación principal">
+    <a class="brand" href="#inicio"><span aria-hidden="true">✦</span> Navidad para Coraima</a>
+    <div class="nav-links"><a href="#recuerdos">Recuerdos</a><a href="#estrellas">Estrellas</a><a href="#carta">Carta</a><a href="#versiculos">Versículos</a><a href="#bendicion">Bendición</a></div>
+    <div class="hero-tools">
+      <button class="motion" type="button" aria-pressed="true"><span aria-hidden="true">✧</span> <span class="motion-text">Pausar movimiento</span></button>
+      <button class="sound-button" type="button" aria-label="Música de Navidad" aria-pressed="false" title="Reproducir En Lo Alto Gloria"><span aria-hidden="true">♫</span></button>
+    </div>
+  </nav>
+  <div class="wrap hero-content">
+    <p class="kicker date"><time datetime="2026-12-25">25 de diciembre de 2026</time> <span aria-hidden="true">·</span> De Marco</p>
+    <h1>Coraima</h1>
+    <p class="holiday">Feliz Navidad</p>
+    <p class="hero-message">Que la alegría de celebrar el nacimiento de Jesús llene tu hogar.</p>
+    <div class="hero-actions">
+      <button class="hero-link library-button" type="button" aria-expanded="false" aria-controls="library-note"><span aria-hidden="true">✦</span> <span id="library-label">Iluminar la biblioteca</span></button>
+      <a class="hero-secondary" href="#para-ti">Seguir leyendo <span aria-hidden="true">↓</span></a>
+    </div>
+    <div class="hero-dedication" aria-live="polite">
+      <p id="library-note" hidden>Que el Señor te bendiga, Coraima. <em>Que él guíe tus pasos en el año que viene.</em></p>
+    </div>
+  </div>
+</header>
+<main id="contenido">
+  <section class="section welcome" id="para-ti" aria-labelledby="welcome-title">
+    <div class="wrap welcome-layout">
+      <figure class="welcome-photo reveal">
+        <div><img src="recuerdo-1.jpg" alt="Coraima en el parque, en una tarde soleada" loading="lazy"></div>
+      </figure>
+      <div class="welcome-copy reveal">
+        <p class="kicker">Para Coraima</p>
+        <h2 id="welcome-title">Un saludo <em>de Navidad</em></h2>
+        <p>Reuní algunas fotos, unos versículos y una carta para desearte una linda Navidad.</p>
+        <a class="welcome-link" href="#carta">Leer tu carta <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="recuerdos" class="section album">
+    <div class="wrap">
+      <div class="album-heading reveal">
+        <div><p class="kicker">Tu álbum</p><h2>Recuerdos <em>que hablan</em></h2></div>
+        <p>Desde tus primeros años hasta las fotos de hoy. Toca una imagen para verla completa.</p>
+      </div>
+      <div class="album-layout reveal">
+        <div class="album-card" aria-live="polite" aria-atomic="true">
+          <p class="kicker" id="photo-count">01 / 07</p>
+          <h3 id="photo-title">Una tarde al sol</h3>
+          <p id="photo-note">Que nunca falten los días en los que puedas salir, respirar y disfrutar del sol.</p>
+        </div>
+        <div class="stage-wrap">
+          <button class="stage" type="button" aria-label="Ver foto en grande" aria-haspopup="dialog">
+            <img id="photo" src="recuerdo-1.jpg" alt="Retrato al sol en un parque">
+            <span class="expand" aria-hidden="true">⤢</span>
+          </button>
+          <div class="photo-arrows">
+            <button class="round" id="photo-prev" type="button" aria-label="Foto anterior">←</button>
+            <button class="round" id="photo-next" type="button" aria-label="Siguiente foto">→</button>
+          </div>
+        </div>
+      </div>
+      <div class="album-playback">
+        <button class="play-album" type="button"><span class="play-icon" aria-hidden="true">▶</span><span class="play-label">Reproducir recuerdos</span></button>
+        <span class="album-timer" aria-hidden="true"><i></i></span>
+      </div>
+      <div class="filmstrip reveal" aria-label="Elegir una foto">
+        <button type="button" data-photo="0" aria-label="Una tarde al sol" aria-pressed="true"><img src="recuerdo-1.jpg" alt=""></button>
+        <button type="button" data-photo="1" aria-label="Sonrisas en las escaleras" aria-pressed="false"><img src="recuerdo-2.jpg" alt=""></button>
+        <button type="button" data-photo="2" aria-label="Un momento juntos" aria-pressed="false"><img src="recuerdo-3.jpg" alt=""></button>
+        <button type="button" data-photo="3" aria-label="Entre árboles y abrazos" aria-pressed="false"><img src="recuerdo-4.jpg" alt=""></button>
+        <button type="button" data-photo="4" aria-label="Globos y risas" aria-pressed="false"><img src="recuerdo-5.jpg" alt=""></button>
+        <button type="button" data-photo="5" aria-label="Cuando eras pequeña" aria-pressed="false"><img src="recuerdo-6.jpg" alt=""></button>
+        <button type="button" data-photo="6" aria-label="Al caer la tarde" aria-pressed="false"><img src="recuerdo-7.jpg" alt=""></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="estrellas" class="section starlight" aria-labelledby="stars-title">
+    <div class="wrap stars-layout">
+      <div class="star-map reveal" role="group" aria-label="Tres estrellas con mensajes">
+        <div class="star-orbit" aria-hidden="true"></div>
+        <div class="star-orbit orbit-dashed" aria-hidden="true"></div>
+        <div class="star-halo" aria-hidden="true"></div>
+        <div class="star-portrait"><img src="recuerdo-7.jpg" alt="Retrato de Coraima al atardecer" loading="lazy"></div>
+        <button class="star-choice star-first" type="button" data-star="0" aria-pressed="false"><span aria-hidden="true">✦</span> Gratitud</button>
+        <button class="star-choice star-second" type="button" data-star="1" aria-pressed="false"><span aria-hidden="true">✦</span> Ánimo</button>
+        <button class="star-choice star-third" type="button" data-star="2" aria-pressed="false"><span aria-hidden="true">✦</span> Fe</button>
+      </div>
+      <div class="stars-copy reveal">
+        <h2 id="stars-title">Gratitud, <em>ánimo y fe</em></h2>
+        <div class="star-message" aria-live="polite" aria-atomic="true">
+          <h3 id="star-title">Tres estrellas para ti</h3>
+          <p id="star-note">Toca una estrella para leer su mensaje.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="carta" class="section letter-section">
+    <div class="wrap letter-layout">
+      <div class="letter-intro reveal">
+        <p class="kicker">De Marco, para ti</p>
+        <h2>Una carta <em>de Navidad</em></h2>
+      </div>
+      <details class="letter-envelope">
+        <summary class="envelope-control">
+          <span class="envelope-stage" aria-hidden="true">
+            <span class="envelope-lining"></span>
+            <span class="envelope-pocket"></span>
+            <span class="envelope-flap"></span>
+            <span class="envelope-seal">C</span>
+            <span class="envelope-address">Para Coraima</span>
+          </span>
+          <span class="envelope-action">
+            <span class="envelope-open-label">Abrir la carta <span aria-hidden="true">↓</span></span>
+            <span class="envelope-close-label">Cerrar la carta <span aria-hidden="true">↑</span></span>
+          </span>
+        </summary>
+        <article class="paper" aria-labelledby="letter-title">
+          <div class="paper-top"><time class="kicker" datetime="2026-12-25">25 de diciembre de 2026</time><span aria-hidden="true">✦</span></div>
+          <h3 id="letter-title">Hola, Coraima.</h3>
+          <p>En esta Navidad, al celebrar el nacimiento de Jesús, le doy gracias al Señor por tu vida y por la oportunidad de conocerte un poquito más. Eres una amiga valiosa para mí y agradezco la amistad que compartimos.</p>
+          <p>Que Dios te dé sabiduría en tus estudios de Derecho, ánimo en los días exigentes y sensibilidad para escuchar a quienes algún día busquen tu ayuda.</p>
+          <p>Espero que disfrutes estos días con tu familia y que el próximo año puedas ver cómo el Señor va cumpliendo sus planes en tu vida.</p>
+          <p>¡Feliz Navidad, Coraima!</p>
+          <p class="signature">Con cariño,<br><span>Marco</span></p>
+        </article>
+      </details>
+    </div>
+  </section>
+
+  <section class="section vocation" id="vocacion">
+    <div class="wrap vocation-layout">
+      <div class="scale-art reveal" aria-hidden="true">
+        <div class="orbit"></div><div class="orbit orbit-inner"></div>
+        <div class="scale"><span class="scale-post"></span><span class="scale-foot"></span><span class="scale-pivot"></span><span class="beam"><span class="pan pan-left"></span><span class="pan pan-right"></span></span></div>
+        <span class="orbit-star">✧</span>
+      </div>
+      <div class="vocation-copy reveal">
+        <p class="kicker">Tu camino en Derecho</p>
+        <h2>Que tu voz <em>sirva a otros</em></h2>
+        <p>Coraima, deseo que encuentres en el Derecho una forma de poner tus conocimientos al servicio de quienes necesitan ser escuchados.</p>
+        <div class="values" aria-label="Deseos para tu carrera">
+          <button type="button" data-value="0" aria-pressed="true">Justicia</button>
+          <button type="button" data-value="1" aria-pressed="false">Sabiduría</button>
+          <button type="button" data-value="2" aria-pressed="false">Compasión</button>
+        </div>
+        <p class="value-note" id="value-note" aria-live="polite">Que tengas el valor de defender lo justo, incluso cuando sea difícil.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section scriptures" id="versiculos">
+    <div class="wrap scripture-layout">
+      <div class="scripture-intro reveal">
+        <p class="kicker">Reina-Valera Antigua</p>
+        <h2>Palabras para <em>cada momento</em></h2>
+        <p>Elige lo que necesites recordar hoy.</p>
+        <div class="verse-topics" aria-label="Temas de los versículos">
+          <button data-verse="0" type="button" aria-pressed="false">La Navidad</button>
+          <button data-verse="1" type="button" aria-pressed="true">Tu valor</button>
+          <button data-verse="2" type="button" aria-pressed="false">Tu historia</button>
+          <button data-verse="3" type="button" aria-pressed="false">Lo justo</button>
+          <button data-verse="4" type="button" aria-pressed="false">Las decisiones</button>
+          <button data-verse="5" type="button" aria-pressed="false">Los días difíciles</button>
+          <button data-verse="6" type="button" aria-pressed="false">El tiempo de Dios</button>
+        </div>
+      </div>
+      <div class="verse-book reveal">
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <div class="verse-page" aria-live="polite" aria-atomic="true">
+          <blockquote id="verse-text">«Porque en mis ojos fuiste de grande estima, fuiste honorable, y yo te amé […]»</blockquote>
+          <a class="kicker verse-reference" id="verse-ref" href="https://www.biblegateway.com/passage/?search=Isa%C3%ADas+43&version=RVA" target="_blank" rel="noopener">Isaías 43:4 ↗</a>
+          <p id="verse-note">Dios le recordó a Israel cuánto lo amaba. Que estas palabras también te recuerden que tu valor va mucho más allá de una nota o un logro.</p>
+        </div>
+        <div class="verse-controls">
+          <button class="round" id="verse-prev" type="button" aria-label="Versículo anterior">←</button>
+          <span class="kicker" id="verse-count">02 / 07</span>
+          <button class="round" id="verse-next" type="button" aria-label="Siguiente versículo">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wish-tree" id="arbol" aria-labelledby="tree-title">
+    <div class="wrap wish-tree-layout">
+      <div class="wish-tree-intro reveal">
+        <h2 id="tree-title">Un árbol <em>de deseos</em></h2>
+        <p>Mueve el cursor o desliza el dedo sobre el árbol para inclinarlo. Toca los adornos para encenderlos.</p>
+      </div>
+      <div class="wish-tree-frame reveal">
+        <div class="wish-tree-scene" role="group" aria-label="Adornos del árbol de Navidad">
+          <div class="tree-backdrop"><img src="arbol-navidad.jpg" alt="" loading="lazy"></div>
+          <span class="tree-crown" aria-hidden="true">✦</span>
+          <button class="tree-ornament" type="button" data-wish="0" aria-pressed="false" aria-label="Paz"><span aria-hidden="true">✧</span></button>
+          <button class="tree-ornament" type="button" data-wish="1" aria-pressed="false" aria-label="Valentía"><span aria-hidden="true">✦</span></button>
+          <button class="tree-ornament" type="button" data-wish="2" aria-pressed="false" aria-label="Alegría"><span aria-hidden="true">✧</span></button>
+          <span class="tree-lights" aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="wish-tree-note" aria-live="polite" aria-atomic="true">
+        <p class="kicker tree-count">0 de 3 luces encendidas</p>
+        <h3 class="tree-wish-title">Para el año que viene</h3>
+        <p class="tree-wish-text"></p>
+        <p class="tree-finale" hidden>Que Dios te acompañe en cada paso, Coraima.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section blessing" id="bendicion">
+    <div class="prayer-scene" aria-hidden="true"></div>
+    <div class="wrap blessing-content reveal">
+      <div class="candle" aria-hidden="true"><div class="candle-sparks"></div><i class="flame"></i><i class="wick"></i><i class="wax"></i></div>
+      <p class="kicker">Una oración por ti</p>
+      <h2>Que Dios guíe <em>tus pasos</em></h2>
+      <p>Señor, gracias por la vida de Coraima y por las personas que la acompañan. Dale sabiduría en sus estudios, paz cuando tenga que tomar decisiones y fuerzas en los días exigentes. Que su vocación le permita servir con justicia y compasión, y que la alegría de Jesús siga con ella después de Navidad. Amén.</p>
+      <button class="light-button" type="button" aria-pressed="false"><span aria-hidden="true">✧</span> <span id="light-label">Encender la vela</span></button>
+      <p class="light-message" aria-live="polite"></p>
+      <a class="postcard-link" href="#postal">Ver tu postal <span aria-hidden="true">↓</span></a>
+    </div>
+  </section>
+  <section class="section keepsake" id="postal" aria-labelledby="postal-title">
+    <div class="wrap keepsake-layout">
+      <figure class="postcard reveal" id="postal-tarjeta">
+        <div class="postcard-sheet">
+          <div class="postcard-face postcard-front">
+            <img src="postal-belen.jpg" alt="" loading="lazy">
+            <div class="postcard-text">
+              <p class="postcard-greeting">Feliz Navidad</p>
+              <p class="postcard-name">Coraima</p>
+              <p class="postcard-wish"><span>Que la paz de Jesús</span><br><span>ilumine tu camino.</span></p>
+              <p class="postcard-from">Con cariño, Marco</p>
+              <time class="postcard-date" datetime="2026-12-25">25 de diciembre de 2026</time>
+            </div>
+          </div>
+          <div class="postcard-face postcard-back" aria-hidden="true">
+            <span class="postcard-mark" aria-hidden="true">✦</span>
+            <p>Para ti, Coraima.</p>
+            <p>Que la alegría del nacimiento de Jesús llene tu hogar y que Dios guíe tus planes en el año que viene. ¡Feliz Navidad!</p>
+            <p>Con cariño,<br>Marco</p>
+          </div>
+        </div>
+      </figure>
+      <div class="keepsake-copy reveal">
+        <h2 id="postal-title">Una postal <em>para ti</em></h2>
+        <div class="postcard-actions">
+          <button type="button" class="flip-postcard" aria-pressed="false" aria-controls="postal-tarjeta">Ver el reverso</button>
+          <button type="button" class="save-postcard">Guardar portada <span aria-hidden="true">↓</span></button>
+        </div>
+        <p class="postcard-status" role="status"></p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-layout"><p>Feliz Navidad, Coraima <span aria-hidden="true">✦</span> Marco</p><a href="#inicio">Volver al inicio ↑</a></div></footer>
+<dialog class="viewer" aria-label="Foto en grande">
+  <form method="dialog"><button type="submit" class="round viewer-close" aria-label="Cerrar foto">×</button></form>
+  <figure><img id="viewer-image" alt=""><figcaption id="viewer-caption"></figcaption></figure>
+  <div class="viewer-controls"><button type="button" class="round" id="viewer-prev" aria-label="Foto anterior">←</button><button type="button" class="round" id="viewer-next" aria-label="Siguiente foto">→</button></div>
+</dialog>
+</body>
+</html>
