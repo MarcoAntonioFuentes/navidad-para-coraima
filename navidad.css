@@ -436,17 +436,17 @@ footer{padding:24px 0;background:#151611;font-size:.83rem}
 .postcard-sheet{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .75s cubic-bezier(.3,.72,.24,1)}
 .postcard[data-side="back"] .postcard-sheet{transform:rotateY(180deg)}
 .postcard-face{position:absolute;inset:0;isolation:isolate;overflow:hidden;border-radius:4px;backface-visibility:hidden;box-shadow:0 20px 42px #30241548}
-.postcard-front{background:#102b30;color:#fff1d9;text-align:center}
+.postcard-front{background:radial-gradient(ellipse at bottom right,#ead6ae,transparent 70%),#fff5e0;color:#46392d;text-align:center}
 .postcard-front img,.postcard-front::before,.postcard-face::after{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.postcard-front img{object-fit:cover;object-position:50% 15%;z-index:-3}
-.postcard-front::before{content:"";z-index:-2;background:linear-gradient(0deg,#0d2228c9,#0d222861 54%,transparent 82%)}
-.postcard-face::after{content:"";inset:4%;width:auto;height:auto;border:3px double #e9c58eac}
-.postcard-text{position:absolute;inset:35% 7% 6%}
-.postcard-greeting{font:italic 7.2cqw/1 var(--serif);color:#f1ce98}
-.postcard-name{font:400 23.5cqw/.88 var(--serif);margin-top:2.5cqw;letter-spacing:-.035em}
-.postcard-wish{font:400 5.1cqw/1.24 Georgia,serif;margin-top:5.5cqw}
-.postcard-from{font:italic 4.2cqw Georgia,serif;color:#f0ca92;margin-top:6cqw}
-.postcard-date{display:block;margin-top:4.3cqw;font-size:2.6cqw;letter-spacing:.08em;font-weight:700;color:#f1ce98}
+.postcard-front img{inset:7% 7% auto;width:86%;height:34%;object-fit:cover;object-position:50% 0%;z-index:-1;border-radius:48% 48% 2px 2px / 65% 65% 2px 2px}
+.postcard-front::before{content:"";inset:42% 7% auto;width:86%;height:1px;z-index:-1;background:linear-gradient(90deg,transparent,#a47b46,transparent)}
+.postcard-face::after{content:"";inset:3%;width:auto;height:auto;border:3px double #aa8256ad}
+.postcard-text{position:absolute;inset:46% 7% 6%}
+.postcard-greeting{font:italic 6.3cqw/1 var(--serif);color:#7d5740}
+.postcard-name{font:400 21.5cqw/.88 var(--serif);margin-top:3cqw;letter-spacing:-.035em;color:#364b40}
+.postcard-wish{font:400 3.8cqw/1.5 Georgia,serif;margin-top:4cqw}
+.postcard-from{font:italic 4cqw Georgia,serif;color:#794739;margin-top:4.5cqw}
+.postcard-date{display:block;margin-top:4cqw;font-size:2.45cqw;letter-spacing:.065em;font-weight:700;color:#796046}
 .postcard-back{display:flex;flex-direction:column;justify-content:center;gap:4.5cqw;padding:13%;transform:rotateY(180deg);background:radial-gradient(ellipse at top,#fff4df,#ead6b1);color:#4e302b}
 .postcard-back::after{border-color:#a47852a8}
 .postcard-mark{font-size:6cqw;color:#99603c}
